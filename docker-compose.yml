@@ -1,0 +1,80 @@
+version: '3.8'
+
+services:
+
+  #NGINX Server
+  web:
+    container_name: news-nginx
+    hostname: newsaggregatorwebsrv
+    image: nginx:latest
+    restart: always
+    ports:
+      - 8089:80
+    volumes:
+      - ./backend:/public_html
+      - ./conf.d:/etc/nginx/conf.d
+      - ./logs/nginx:/var/log/nginx/
+    depends_on:
+      - php
+   
+      
+  #PHP 
+  php:
+    container_name: news-php
+    hostname: newsaggregatorphpsrv
+    build: 
+      context: ./php-fpm          
+      dockerfile: Dockerfile    
+    volumes:
+      - ./backend:/public_html
+      - ./logs/php-fpm:/var/log/fpm-php.www.log
+      #- ./php.ini:/usr/local/etc/
+    expose:
+      - 9000
+
+
+  #Composer 
+  composer:
+        image: composer
+        volumes:
+            - ./backend:/public_html
+        command: install
+
+
+  #MySQL Database
+  db:
+    image: mysql:8.0
+    container_name: news-db
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: myrootpassword
+      MYSQL_DATABASE: news_aggregator_db
+      MYSQL_USER: khayrul
+      MYSQL_PASSWORD: root@123A
+      SERVICE_TAGS: dev
+      SERVICE_NAME: mysql
+    volumes:
+      - ./mysql_db/data:/var/lib/mysql
+    ports:
+      - 3307:3306  
+
+
+  # News Portal
+  # portal:
+  #   container_name: news-portal
+  #   hostname: newsaggregatorportalsrv
+  #   build:
+  #     context: ./frontend/news-portal     
+  #     dockerfile: Dockerfile                        
+  #   restart: unless-stopped
+  #   environment:
+  #     TZ: "Asia/Dhaka"
+  #   ports: 
+  #     - 8088:80
+      
+
+
+networks:
+  default:
+    name: newsnet
+    external: true

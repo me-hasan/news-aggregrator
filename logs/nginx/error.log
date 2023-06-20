@@ -1,0 +1,887 @@
+2023/06/18 21:05:40 [notice] 1#1: using the "epoll" event method
+2023/06/18 21:05:40 [notice] 1#1: nginx/1.23.3
+2023/06/18 21:05:40 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/06/18 21:05:40 [notice] 1#1: OS: Linux 5.15.0-57-generic
+2023/06/18 21:05:40 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/06/18 21:05:40 [notice] 1#1: start worker processes
+2023/06/18 21:05:40 [notice] 1#1: start worker process 28
+2023/06/18 21:05:40 [notice] 1#1: start worker process 29
+2023/06/18 21:05:40 [notice] 1#1: start worker process 30
+2023/06/18 21:05:40 [notice] 1#1: start worker process 31
+2023/06/18 21:05:40 [notice] 1#1: start worker process 32
+2023/06/18 21:05:40 [notice] 1#1: start worker process 33
+2023/06/18 21:05:40 [notice] 1#1: start worker process 34
+2023/06/18 21:05:40 [notice] 1#1: start worker process 35
+2023/06/18 21:07:58 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/06/18 21:07:58 [notice] 28#28: gracefully shutting down
+2023/06/18 21:07:58 [notice] 30#30: gracefully shutting down
+2023/06/18 21:07:58 [notice] 31#31: gracefully shutting down
+2023/06/18 21:07:58 [notice] 32#32: gracefully shutting down
+2023/06/18 21:07:58 [notice] 33#33: gracefully shutting down
+2023/06/18 21:07:58 [notice] 28#28: exiting
+2023/06/18 21:07:58 [notice] 30#30: exiting
+2023/06/18 21:07:58 [notice] 31#31: exiting
+2023/06/18 21:07:58 [notice] 32#32: exiting
+2023/06/18 21:07:58 [notice] 33#33: exiting
+2023/06/18 21:07:58 [notice] 32#32: exit
+2023/06/18 21:07:58 [notice] 30#30: exit
+2023/06/18 21:07:58 [notice] 31#31: exit
+2023/06/18 21:07:58 [notice] 28#28: exit
+2023/06/18 21:07:58 [notice] 33#33: exit
+2023/06/18 21:07:58 [notice] 35#35: gracefully shutting down
+2023/06/18 21:07:58 [notice] 35#35: exiting
+2023/06/18 21:07:58 [notice] 29#29: gracefully shutting down
+2023/06/18 21:07:58 [notice] 35#35: exit
+2023/06/18 21:07:58 [notice] 29#29: exiting
+2023/06/18 21:07:58 [notice] 34#34: gracefully shutting down
+2023/06/18 21:07:58 [notice] 34#34: exiting
+2023/06/18 21:07:58 [notice] 29#29: exit
+2023/06/18 21:07:58 [notice] 34#34: exit
+2023/06/18 21:07:58 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2023/06/18 21:07:58 [notice] 1#1: worker process 28 exited with code 0
+2023/06/18 21:07:58 [notice] 1#1: signal 29 (SIGIO) received
+2023/06/18 21:07:58 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2023/06/18 21:07:58 [notice] 1#1: worker process 30 exited with code 0
+2023/06/18 21:07:58 [notice] 1#1: worker process 32 exited with code 0
+2023/06/18 21:07:58 [notice] 1#1: worker process 34 exited with code 0
+2023/06/18 21:07:58 [notice] 1#1: worker process 35 exited with code 0
+2023/06/18 21:07:58 [notice] 1#1: signal 29 (SIGIO) received
+2023/06/18 21:07:58 [notice] 1#1: signal 17 (SIGCHLD) received from 35
+2023/06/18 21:07:58 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2023/06/18 21:07:58 [notice] 1#1: worker process 29 exited with code 0
+2023/06/18 21:07:58 [notice] 1#1: worker process 31 exited with code 0
+2023/06/18 21:07:58 [notice] 1#1: signal 29 (SIGIO) received
+2023/06/18 21:07:58 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2023/06/18 21:07:58 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2023/06/18 21:07:58 [notice] 1#1: worker process 33 exited with code 0
+2023/06/18 21:07:58 [notice] 1#1: exit
+2023/06/18 21:08:30 [notice] 1#1: using the "epoll" event method
+2023/06/18 21:08:30 [notice] 1#1: nginx/1.23.3
+2023/06/18 21:08:30 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/06/18 21:08:30 [notice] 1#1: OS: Linux 5.15.0-57-generic
+2023/06/18 21:08:30 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/06/18 21:08:30 [notice] 1#1: start worker processes
+2023/06/18 21:08:30 [notice] 1#1: start worker process 28
+2023/06/18 21:08:30 [notice] 1#1: start worker process 29
+2023/06/18 21:08:30 [notice] 1#1: start worker process 30
+2023/06/18 21:08:30 [notice] 1#1: start worker process 31
+2023/06/18 21:08:30 [notice] 1#1: start worker process 32
+2023/06/18 21:08:30 [notice] 1#1: start worker process 33
+2023/06/18 21:08:30 [notice] 1#1: start worker process 34
+2023/06/18 21:08:30 [notice] 1#1: start worker process 35
+2023/06/18 21:50:35 [warn] 28#28: *1 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/1/00/0000000001 while reading upstream, client: 192.168.40.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://192.168.40.2:9000", host: "localhost:8089"
+2023/06/19 07:56:25 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 07:56:26 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 07:56:27 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 07:56:28 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 07:56:30 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 07:56:32 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 07:56:35 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 07:56:42 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 07:56:55 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 07:57:22 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 07:58:13 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 07:59:14 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 08:00:14 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 08:01:15 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 08:02:15 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 08:03:16 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 08:04:16 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 08:05:17 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 08:06:17 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 08:07:18 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 08:08:18 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 08:09:19 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 08:10:20 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 08:11:20 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 08:12:20 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 08:13:21 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 08:14:21 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 08:15:22 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 08:16:22 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 08:17:23 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 08:18:23 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 08:19:24 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 08:20:24 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 08:21:25 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 08:22:25 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 08:23:26 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 08:24:26 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 08:25:27 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 09:25:38 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 09:25:39 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 09:25:40 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 09:25:42 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 09:25:44 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 09:25:46 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 09:25:50 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 09:25:59 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 09:26:13 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 09:26:41 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 09:27:33 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 09:28:33 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 09:29:34 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 09:30:35 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 09:31:35 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 09:32:36 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 09:33:37 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 09:34:38 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 09:35:38 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 09:36:39 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 09:37:40 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 09:38:40 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 09:39:41 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 09:40:42 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 09:41:42 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 09:42:43 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 09:43:44 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 09:44:44 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 09:45:45 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 09:46:46 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 09:47:47 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 09:48:47 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 09:49:49 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 09:50:50 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 09:51:50 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 09:52:51 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 09:53:52 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 09:54:52 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 09:55:53 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 09:56:53 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 09:57:54 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 09:58:54 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 09:59:55 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 10:00:56 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 10:01:56 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 10:02:57 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 10:03:58 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 10:04:58 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 10:05:59 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 10:07:00 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 10:08:00 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 10:09:01 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 10:10:01 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 10:11:02 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 10:12:02 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 10:13:03 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 10:14:03 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 10:15:04 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 10:16:04 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 10:17:05 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 10:18:06 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 10:19:06 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 10:20:07 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 10:21:08 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 10:22:08 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 10:23:09 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 10:24:10 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 10:25:10 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 10:26:11 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 10:27:11 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 10:28:12 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 10:29:12 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 10:30:13 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 10:31:13 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 10:32:13 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 10:33:14 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 10:34:14 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 10:35:15 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 10:36:15 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 10:37:16 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 10:38:17 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 10:39:17 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 10:40:18 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 10:41:18 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 10:42:19 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 10:43:19 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 10:44:20 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 10:45:21 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 10:46:21 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 10:47:22 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 10:48:23 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 10:49:23 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 10:50:24 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 10:51:24 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 10:52:25 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 10:53:25 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 10:54:26 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 10:55:26 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 10:56:27 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 10:57:27 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 10:58:28 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 10:59:28 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 11:00:29 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 11:01:29 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 11:02:30 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 11:03:30 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 11:04:31 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 11:05:31 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 11:06:32 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 11:07:32 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 11:08:33 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 11:09:33 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 11:10:34 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 11:11:34 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 11:12:35 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 11:13:35 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 11:14:36 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 11:15:36 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 11:16:37 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 11:17:38 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 11:18:38 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 11:19:38 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 11:20:39 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 11:21:39 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 11:22:40 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 11:23:40 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 11:24:41 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 11:25:41 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 11:26:42 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 11:27:43 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 11:28:43 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 11:29:44 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 11:30:45 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 11:31:45 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 11:32:46 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 11:33:47 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 11:34:47 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 11:35:48 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 11:36:49 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 11:37:50 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 11:38:50 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 11:39:51 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 11:40:51 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 11:41:52 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 11:42:52 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 11:43:53 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 11:44:53 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 11:45:54 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 11:46:54 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 11:47:55 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 11:48:55 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 11:49:56 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 11:50:56 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 11:51:57 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 11:52:57 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 11:53:58 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 11:54:58 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 11:55:59 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 11:57:00 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 11:58:00 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 11:59:01 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 12:00:01 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 12:01:01 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 12:02:02 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 12:03:02 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 12:04:03 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 12:05:03 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 12:06:04 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 12:07:04 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 12:08:05 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 12:09:05 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 12:10:06 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 12:11:07 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 12:12:07 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 12:13:08 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 12:14:08 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 12:15:09 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 12:16:10 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 12:17:10 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 12:18:11 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 12:19:11 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 12:20:12 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 12:21:12 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 12:22:13 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 12:23:13 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 12:24:14 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 12:25:14 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 12:26:15 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 12:27:15 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 12:28:16 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 12:29:17 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 12:30:17 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 12:31:18 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 12:32:18 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 12:33:19 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 12:34:19 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 12:35:20 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 12:36:20 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 12:37:20 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 12:38:21 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 12:39:21 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 12:40:22 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 12:41:22 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 12:42:23 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 12:43:24 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 12:44:24 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 12:45:25 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 12:46:25 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 12:47:26 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 12:48:26 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 12:49:27 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 12:50:27 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 12:51:28 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 12:52:28 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 12:53:29 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 12:54:30 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 12:55:30 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 12:56:31 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 12:57:31 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 12:58:32 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 12:59:32 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 13:00:33 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 13:01:34 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 13:02:34 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 13:03:35 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 13:04:35 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 13:05:36 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 13:06:37 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 13:07:37 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 13:08:38 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 13:09:39 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 13:10:40 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 13:11:40 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 13:12:41 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 13:13:41 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 13:14:42 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 13:15:42 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 13:16:43 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 13:17:43 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 13:18:44 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 13:19:44 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 13:20:45 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 13:21:45 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 13:22:46 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 13:23:47 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 13:24:47 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 13:25:48 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 13:26:48 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 13:27:49 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 13:28:49 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 13:29:50 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 13:30:50 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 13:31:51 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 13:32:51 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 13:33:52 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 13:34:52 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 13:35:53 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 13:36:53 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 13:37:54 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 13:38:54 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 13:39:55 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 13:40:55 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 13:41:56 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 13:42:57 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 13:43:57 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 13:44:58 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 13:45:58 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 13:46:59 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/19 13:47:59 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 04:45:23 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 04:46:29 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 04:47:30 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 04:48:31 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 04:49:31 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 04:50:32 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 04:51:33 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 04:52:33 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 04:53:34 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 04:54:35 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 04:55:35 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 04:56:36 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 04:57:36 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 04:58:37 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 04:59:38 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 05:00:38 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 05:01:39 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 05:02:40 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 05:03:40 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 05:04:41 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 05:05:41 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 05:06:42 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 05:07:43 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 05:08:43 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 05:09:44 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 05:10:45 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 05:11:45 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 05:12:46 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 05:13:46 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 05:14:47 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 05:15:48 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 05:16:48 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 05:17:49 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 05:18:49 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 05:19:50 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 05:20:51 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 05:21:51 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 05:22:52 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 05:23:53 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 05:24:54 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 05:25:55 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 05:26:56 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 05:27:56 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 05:28:57 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 05:29:58 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 05:30:58 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 05:31:59 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 05:33:00 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 05:34:00 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 05:35:01 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 05:36:01 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 05:37:02 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 06:23:31 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 06:24:31 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 06:25:32 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 06:26:33 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 06:27:33 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 06:28:34 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 06:29:35 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 06:30:35 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 06:31:36 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 06:32:37 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 06:33:37 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 06:34:38 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 06:35:39 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 06:36:39 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 06:37:40 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 06:38:40 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 06:39:41 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 06:40:42 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 06:41:42 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 06:42:43 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 06:43:43 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 06:44:44 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 06:45:45 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 06:46:45 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 06:47:46 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 06:48:47 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 06:49:47 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 06:50:48 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 06:51:49 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 06:52:50 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 06:53:51 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 06:54:51 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 06:55:52 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 06:56:53 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 06:57:53 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 06:58:54 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 06:59:54 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 07:00:55 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 07:01:56 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 07:02:56 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 07:03:57 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 07:04:58 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 09:16:07 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 09:16:08 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 09:16:09 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 09:16:11 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 09:16:13 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 09:16:16 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 09:16:19 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 09:16:26 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 09:16:41 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 09:17:07 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 09:17:59 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 09:19:00 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 09:20:00 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 09:21:01 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 09:22:01 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 09:23:02 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 09:24:02 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 09:25:03 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 09:26:03 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 09:27:04 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 09:28:04 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 09:29:05 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 09:30:05 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 09:31:06 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 09:32:06 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 09:33:06 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 09:34:07 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 09:35:07 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 09:36:08 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 09:37:08 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 09:38:09 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 09:39:09 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 09:40:10 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 09:41:10 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 09:42:11 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 09:43:12 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 09:44:12 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 09:45:13 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 09:46:13 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 09:47:14 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 09:48:14 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 09:49:15 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 09:50:16 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 09:51:16 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 09:52:17 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 09:53:18 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 09:54:19 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 09:55:19 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 09:56:20 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 09:57:21 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 09:58:21 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 09:59:22 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 10:00:22 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 10:01:23 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 10:02:23 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 10:03:24 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 10:04:24 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 10:05:25 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 10:06:25 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 10:07:26 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 10:08:26 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 10:09:27 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 10:10:27 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 10:11:28 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 10:12:28 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 10:13:29 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 10:14:29 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 10:15:30 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 10:16:30 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 10:17:31 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 10:18:32 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 10:19:32 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 10:20:33 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 10:21:33 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 10:22:34 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 10:23:34 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 10:24:35 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 10:25:35 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 10:26:36 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 10:27:36 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 10:28:37 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 10:29:37 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 10:30:38 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 10:31:38 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 10:32:39 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 10:33:39 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 10:34:40 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 10:35:40 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 10:36:41 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 10:37:42 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 10:38:43 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 10:39:44 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 10:40:45 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 10:41:46 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 10:42:46 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 10:43:47 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 10:44:47 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 10:45:48 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 10:46:48 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 10:47:49 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 10:48:49 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 10:49:50 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 10:50:50 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 10:51:51 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 10:52:51 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 10:53:52 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 10:54:52 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 10:55:53 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 10:56:54 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 10:57:54 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 10:58:55 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 10:59:56 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 11:00:57 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 11:01:58 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 11:02:58 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 11:03:59 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 11:04:59 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 11:06:00 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 11:07:00 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 11:08:01 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 11:09:01 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 11:10:02 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 11:11:02 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 11:12:03 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 11:13:03 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 11:14:04 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 11:15:04 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 11:16:05 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 11:17:05 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 11:18:06 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 11:19:06 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 11:20:07 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 11:21:07 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 11:22:08 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 11:23:08 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 11:24:09 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 11:25:09 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 11:26:10 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 11:27:10 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 11:28:11 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 11:29:11 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 11:30:12 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 11:31:13 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 11:32:13 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 11:33:13 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 11:34:14 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 11:35:15 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 11:36:15 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 11:37:16 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 11:38:16 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 11:39:17 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 11:40:17 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 11:41:18 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 11:42:18 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 11:43:19 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 11:44:19 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 11:45:20 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 11:46:20 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 11:47:21 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 11:48:21 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 11:49:22 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 11:50:23 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 11:51:23 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 11:52:24 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 11:53:25 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 11:54:25 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 11:55:26 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 11:56:26 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 11:57:27 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 11:58:28 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 11:59:28 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 12:00:29 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 12:01:29 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 12:02:30 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 12:03:30 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 12:04:31 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 12:05:31 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 12:06:32 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 12:07:32 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 12:08:33 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 12:09:33 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 12:10:34 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 12:11:34 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 12:12:35 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 12:13:35 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 12:14:36 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 12:15:36 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 12:16:37 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 12:17:37 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 12:18:38 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 12:19:38 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 12:20:38 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 12:21:39 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 12:22:40 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 12:23:40 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 12:24:41 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 12:25:41 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 12:26:42 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 12:27:42 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 12:28:43 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 12:29:43 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 12:30:44 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 12:31:44 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 12:32:45 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 12:33:45 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 12:34:46 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 12:35:46 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 12:36:47 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 12:37:47 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 12:38:48 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 12:39:49 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 12:40:49 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 12:41:50 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 12:42:50 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 12:43:51 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 12:44:51 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 12:45:52 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 12:46:52 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 12:47:53 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 12:48:53 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 12:49:54 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 12:50:55 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 12:51:55 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 12:52:56 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 12:53:56 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 12:54:57 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 12:55:57 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 12:56:58 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 12:57:59 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 12:58:59 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 13:00:00 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 13:01:01 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 13:02:02 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 13:03:02 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 13:04:03 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 13:05:03 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 13:06:04 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 13:07:04 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 13:08:05 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 13:09:05 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 13:10:06 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 13:11:06 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 13:12:07 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 13:13:07 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 13:14:08 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 13:15:08 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 13:16:09 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 13:17:09 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 13:18:10 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 13:19:11 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 13:20:11 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 13:21:11 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 13:22:12 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 13:23:12 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 13:24:13 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 13:25:13 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 13:26:14 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 13:27:14 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 13:28:15 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 13:29:15 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 13:30:16 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 13:31:16 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 13:32:17 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 13:33:17 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 13:34:18 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 13:35:18 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 13:36:19 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 13:37:20 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 13:38:20 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 13:39:21 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 13:40:21 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 13:41:22 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 13:42:23 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 13:43:23 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 13:44:24 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 13:45:24 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 17:27:09 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 17:27:10 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 17:27:11 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 17:27:12 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 17:27:14 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 17:27:17 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 17:27:21 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 17:27:28 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 17:27:42 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 17:28:09 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 17:29:02 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 17:30:02 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 17:31:03 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 17:32:03 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 17:33:04 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 17:34:05 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 17:35:06 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 17:36:06 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 17:37:07 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 17:38:08 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 17:39:08 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 17:40:09 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 17:41:10 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 17:42:10 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 17:43:11 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 17:44:12 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 17:45:12 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 17:46:13 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 17:47:14 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 17:48:14 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 17:49:15 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 17:50:15 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 17:51:16 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 17:52:17 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 17:53:17 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 17:54:18 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 17:55:19 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 17:56:19 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 17:57:20 [notice] 1#1: using the "epoll" event method
+2023/06/20 17:57:20 [notice] 1#1: nginx/1.23.3
+2023/06/20 17:57:20 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/06/20 17:57:20 [notice] 1#1: OS: Linux 5.15.0-57-generic
+2023/06/20 17:57:20 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/06/20 17:57:20 [notice] 1#1: start worker processes
+2023/06/20 17:57:20 [notice] 1#1: start worker process 27
+2023/06/20 17:57:20 [notice] 1#1: start worker process 28
+2023/06/20 17:57:20 [notice] 1#1: start worker process 29
+2023/06/20 17:57:20 [notice] 1#1: start worker process 30
+2023/06/20 17:57:20 [notice] 1#1: start worker process 31
+2023/06/20 17:57:20 [notice] 1#1: start worker process 32
+2023/06/20 17:57:20 [notice] 1#1: start worker process 33
+2023/06/20 17:57:20 [notice] 1#1: start worker process 34
+2023/06/20 17:59:53 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/06/20 17:59:53 [notice] 27#27: gracefully shutting down
+2023/06/20 17:59:53 [notice] 28#28: gracefully shutting down
+2023/06/20 17:59:53 [notice] 29#29: gracefully shutting down
+2023/06/20 17:59:53 [notice] 30#30: gracefully shutting down
+2023/06/20 17:59:53 [notice] 27#27: exiting
+2023/06/20 17:59:53 [notice] 32#32: gracefully shutting down
+2023/06/20 17:59:53 [notice] 29#29: exiting
+2023/06/20 17:59:53 [notice] 30#30: exiting
+2023/06/20 17:59:53 [notice] 32#32: exiting
+2023/06/20 17:59:53 [notice] 28#28: exiting
+2023/06/20 17:59:53 [notice] 27#27: exit
+2023/06/20 17:59:53 [notice] 29#29: exit
+2023/06/20 17:59:53 [notice] 30#30: exit
+2023/06/20 17:59:53 [notice] 32#32: exit
+2023/06/20 17:59:53 [notice] 28#28: exit
+2023/06/20 17:59:53 [notice] 33#33: gracefully shutting down
+2023/06/20 17:59:53 [notice] 33#33: exiting
+2023/06/20 17:59:53 [notice] 33#33: exit
+2023/06/20 17:59:53 [notice] 34#34: gracefully shutting down
+2023/06/20 17:59:53 [notice] 34#34: exiting
+2023/06/20 17:59:53 [notice] 34#34: exit
+2023/06/20 17:59:53 [notice] 31#31: gracefully shutting down
+2023/06/20 17:59:53 [notice] 31#31: exiting
+2023/06/20 17:59:53 [notice] 31#31: exit
+2023/06/20 17:59:53 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2023/06/20 17:59:53 [notice] 1#1: worker process 28 exited with code 0
+2023/06/20 17:59:53 [notice] 1#1: signal 29 (SIGIO) received
+2023/06/20 17:59:53 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2023/06/20 17:59:53 [notice] 1#1: worker process 30 exited with code 0
+2023/06/20 17:59:53 [notice] 1#1: worker process 34 exited with code 0
+2023/06/20 17:59:53 [notice] 1#1: signal 29 (SIGIO) received
+2023/06/20 17:59:53 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2023/06/20 17:59:53 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2023/06/20 17:59:53 [notice] 1#1: worker process 32 exited with code 0
+2023/06/20 17:59:53 [notice] 1#1: worker process 33 exited with code 0
+2023/06/20 17:59:53 [notice] 1#1: signal 29 (SIGIO) received
+2023/06/20 17:59:53 [notice] 1#1: signal 17 (SIGCHLD) received from 27
+2023/06/20 17:59:53 [notice] 1#1: worker process 27 exited with code 0
+2023/06/20 17:59:53 [notice] 1#1: signal 29 (SIGIO) received
+2023/06/20 17:59:53 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2023/06/20 17:59:53 [notice] 1#1: worker process 29 exited with code 0
+2023/06/20 17:59:53 [notice] 1#1: worker process 31 exited with code 0
+2023/06/20 17:59:53 [notice] 1#1: exit
+2023/06/20 17:59:57 [notice] 1#1: using the "epoll" event method
+2023/06/20 17:59:57 [notice] 1#1: nginx/1.23.3
+2023/06/20 17:59:57 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/06/20 17:59:57 [notice] 1#1: OS: Linux 5.15.0-57-generic
+2023/06/20 17:59:57 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/06/20 17:59:57 [notice] 1#1: start worker processes
+2023/06/20 17:59:57 [notice] 1#1: start worker process 28
+2023/06/20 17:59:57 [notice] 1#1: start worker process 29
+2023/06/20 17:59:57 [notice] 1#1: start worker process 30
+2023/06/20 17:59:57 [notice] 1#1: start worker process 31
+2023/06/20 17:59:57 [notice] 1#1: start worker process 32
+2023/06/20 17:59:57 [notice] 1#1: start worker process 33
+2023/06/20 17:59:57 [notice] 1#1: start worker process 34
+2023/06/20 17:59:57 [notice] 1#1: start worker process 35
+2023/06/20 18:59:06 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 18:59:08 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 18:59:12 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 18:59:18 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 18:59:19 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 18:59:21 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 18:59:26 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 18:59:32 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 18:59:46 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 19:00:12 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 19:01:03 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 19:02:04 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 19:03:04 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 19:04:05 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/20 19:05:05 [notice] 1#1: using the "epoll" event method
+2023/06/20 19:05:05 [notice] 1#1: nginx/1.23.3
+2023/06/20 19:05:05 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/06/20 19:05:05 [notice] 1#1: OS: Linux 5.15.0-57-generic
+2023/06/20 19:05:05 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/06/20 19:05:05 [notice] 1#1: start worker processes
+2023/06/20 19:05:05 [notice] 1#1: start worker process 28
+2023/06/20 19:05:05 [notice] 1#1: start worker process 29
+2023/06/20 19:05:05 [notice] 1#1: start worker process 30
+2023/06/20 19:05:05 [notice] 1#1: start worker process 31
+2023/06/20 19:05:05 [notice] 1#1: start worker process 32
+2023/06/20 19:05:05 [notice] 1#1: start worker process 33
+2023/06/20 19:05:05 [notice] 1#1: start worker process 34
+2023/06/20 19:05:05 [notice] 1#1: start worker process 35
