@@ -34,8 +34,17 @@ class NewsApiController extends Controller
      */
     public function obtainNewsAndStore()
     {
-         $newsArchive = $this->newApiService->newsFormatter()->toArray();
-         NewsArchive::insert($newsArchive);
+        $newsArray = $this->newApiService->newsFormatter()->toArray();
+        dd($newsArray);
+         $newNews = $newsArray->map(function ($news) {
+            if(!NewsArchive::where('news_id', $news['news_id'])->exists()){
+                return $news;
+            }
+         });
+
+         dd($newNews);
+
+         NewsArchive::insert($newNews);
 
          return $this->successMessage('Successfully Saved!');
 

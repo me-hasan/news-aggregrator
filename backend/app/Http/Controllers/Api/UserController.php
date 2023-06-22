@@ -7,8 +7,8 @@ use App\Models\User;
 use App\Traits\ApiResponser;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
-use Auth;
 use Illuminate\Support\Facades\Hash;
+use Auth;
 
 class UserController extends Controller
 {
@@ -20,15 +20,22 @@ class UserController extends Controller
     public function registration(Request $request) : Response
     {
         $parameters = $request->all();
+
+        $rules = [
+            'name' => 'required',
+            'email' => 'required|unique:users,email',
+            'password' => 'required'
+        ];
+
+        $this->validate($request, $rules);
+
          // Hash the 'password' parameter if it exists
         if (isset($parameters['password'])) {
             $parameters['password'] = Hash::make($parameters['password']);
         }
         $user = User::create($parameters);
-        if(isset($user)){
-            return Response(['status'=> 200, 'message'=> 'User create successfully!'], 200);
-        }
-        return Response(['status'=> 200, 'message'=> 'Something wrong went!'], 200);
+        
+        return $this->successResponse($user, Response::HTTP_CREATED);
     }
 
 
@@ -42,9 +49,9 @@ class UserController extends Controller
         $user = Auth::user();
         if(isset($user)){
             $token = $user->createToken('News')->accessToken;
-            return Response(['status'=> 200, 'token'=> $token], 200);
+            return $this->successResponse(['status'=> 200,'token'=> $token], 200);
         }else{
-            return Response(['status'=> 201, 'message'=> 'Credentials is not valid!'], 201);
+            return $this->successResponse(['status'=> 201,'message'=> 'Credentials is not valid!'], 201);
         }
     }
 
@@ -55,9 +62,9 @@ class UserController extends Controller
     {
         if(Auth::guard('api')->check()){
             $user = Auth::guard('api')->user();
-            return Response(['status'=> 200, 'data'=> $user], 200);
+            return $this->successResponse(['status'=> 200,'data'=> $user], 200);
         }
-        return Response(['status'=> 401, 'data'=> 'Unathenticated'], 401);
+        return $this->successResponse(['status'=> 401,'data'=> 'Unathenticated'], 401);
         
     }
 
@@ -73,9 +80,9 @@ class UserController extends Controller
             ->update(['revoked' => true]);
             $accessToken->revoke();
 
-            return Response(['status'=> 200, 'message'=> 'User logout successfully'], 200);
+            return $this->successResponse(['status'=> 200,'message'=> 'Successfully logout!'], 200);
         }
-        $this->errorResponse('dfsdfs', 401);
+        return $this->successResponse(['status'=> 401,'data'=> 'Unathenticated'], 401);
 
     }
 
