@@ -2,6 +2,7 @@
 
 namespace App\Services;
 
+use App\Models\NewsArchive;
 use App\Traits\ConsumesExternalService;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Carbon;
@@ -32,22 +33,28 @@ class NewsApiService implements NewsInterface
     {
         $newsList = $this->performRequest('GET');
         
-        $object = json_decode($newsList)->sources;
-
-        $collection = new Collection();
-            foreach($object as $key=>$item){
-                $collection->push([
-                'news_id' => $object[$key]->id,
-                'name' => $object[$key]->name,
-                'description' => $object[$key]->description,
-                'url' => $object[$key]->url,
-                'category' => $object[$key]->category,
-                'country' => $object[$key]->country,
-                'language' => $object[$key]->language
-            ]);
-        }   
-
-        return $collection;   
+        $newsObject = collect(json_decode($newsList)->sources);
+        
+        $newsCollection = new Collection();
+        $newsObject->map(function ($news) use ($newsCollection){
+            if(!NewsArchive::where('news_id', $news->id)->exists()){
+                return $newsCollection->push(
+                    [
+                        'news_id' => $news->id,
+                        'name' => $news->name,
+                        'description' => $news->description,
+                        'url' => $news->url,
+                        'category' => $news->category,
+                        'country' => $news->country,
+                        'language' => $news->language,
+                        'created_at' => Carbon::now(),
+                        'updated_at' => Carbon::now()
+                    ]
+                );
+            }
+         });
+         return $newsCollection;
+           
         
     }
 

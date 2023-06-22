@@ -42,6 +42,34 @@ class UserController extends Controller
     /**
      * Display a listing of the resource.
      */
+    public function profileUpdate(Request $request, $user) 
+    {
+        $parameters = $request->all();
+
+        $rules = [
+            'name' => 'required',
+            'email' => 'required',
+            
+        ];
+
+        $this->validate($request, $rules);
+
+        $user = User::findOrFail($user);
+        $user->fill($parameters);
+
+        if($user->isClean()){
+            return $this->errorResponse('At least one value need to be changed!', Response::HTTP_UNPROCESSABLE_ENTITY);
+        }
+        
+        $user->save();
+
+        return $this->successResponse(['status'=> 200,'message'=> 'Successfully Updated!'], 200);
+    }
+
+
+    /**
+     * Display a listing of the resource.
+     */
     public function loginUser(Request $request) : Response
     {
         $input = $request->all();

@@ -32,21 +32,13 @@ class NewsApiController extends Controller
      * Return the list of news and store
      * @return Illuminate\Http\Response
      */
-    public function obtainNewsAndStore()
+    public function pullArticlesAndStore()
     {
-        $newsArray = $this->newApiService->newsFormatter()->toArray();
-        dd($newsArray);
-         $newNews = $newsArray->map(function ($news) {
-            if(!NewsArchive::where('news_id', $news['news_id'])->exists()){
-                return $news;
-            }
-         });
+         $newsArray = $this->newApiService->newsFormatter()->toArray();
+        
+         NewsArchive::insert($newsArray);
 
-         dd($newNews);
-
-         NewsArchive::insert($newNews);
-
-         return $this->successMessage('Successfully Saved!');
+         return $this->successResponse(['status'=> 200,'message'=> 'Successfully pull and store to database!'], 200);
 
     }
 }

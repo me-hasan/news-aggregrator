@@ -18,5 +18,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-$router->get('/pull-news-api-and-store', [NewsApiController::class, 'obtainNewsAndStore']);
+$router->get('/pull-articles-and-store', [NewsApiController::class, 'pullArticlesAndStore']);
 

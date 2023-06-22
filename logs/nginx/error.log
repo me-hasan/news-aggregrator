@@ -1788,3 +1788,134 @@
 2023/06/22 13:17:41 [warn] 34#34: *15 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/2/00/0000000002 while reading upstream, client: 192.168.40.1, server: localhost, request: "GET /pull-news-api-and-store HTTP/1.1", upstream: "fastcgi://192.168.40.3:9000", host: "localhost:8089"
 2023/06/22 13:20:41 [error] 28#28: *20 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 192.168.40.1, server: localhost, request: "GET /pull-news-api-and-store HTTP/1.1", upstream: "fastcgi://192.168.40.3:9000", host: "localhost:8089"
 2023/06/22 13:26:09 [error] 28#28: *23 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 192.168.40.1, server: localhost, request: "GET /pull-news-api-and-store HTTP/1.1", upstream: "fastcgi://192.168.40.3:9000", host: "localhost:8089"
+2023/06/22 13:31:17 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/06/22 13:31:17 [notice] 28#28: gracefully shutting down
+2023/06/22 13:31:17 [notice] 28#28: exiting
+2023/06/22 13:31:17 [notice] 28#28: exit
+2023/06/22 13:31:17 [notice] 29#29: gracefully shutting down
+2023/06/22 13:31:17 [notice] 30#30: gracefully shutting down
+2023/06/22 13:31:17 [notice] 32#32: gracefully shutting down
+2023/06/22 13:31:17 [notice] 29#29: exiting
+2023/06/22 13:31:17 [notice] 30#30: exiting
+2023/06/22 13:31:17 [notice] 35#35: gracefully shutting down
+2023/06/22 13:31:17 [notice] 32#32: exiting
+2023/06/22 13:31:17 [notice] 35#35: exiting
+2023/06/22 13:31:17 [notice] 31#31: gracefully shutting down
+2023/06/22 13:31:17 [notice] 29#29: exit
+2023/06/22 13:31:17 [notice] 31#31: exiting
+2023/06/22 13:31:17 [notice] 30#30: exit
+2023/06/22 13:31:17 [notice] 35#35: exit
+2023/06/22 13:31:17 [notice] 32#32: exit
+2023/06/22 13:31:17 [notice] 31#31: exit
+2023/06/22 13:31:17 [notice] 34#34: gracefully shutting down
+2023/06/22 13:31:17 [notice] 34#34: exiting
+2023/06/22 13:31:17 [notice] 34#34: exit
+2023/06/22 13:31:17 [notice] 33#33: gracefully shutting down
+2023/06/22 13:31:17 [notice] 33#33: exiting
+2023/06/22 13:31:17 [notice] 33#33: exit
+2023/06/22 13:31:17 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2023/06/22 13:31:17 [notice] 1#1: worker process 32 exited with code 0
+2023/06/22 13:31:17 [notice] 1#1: signal 29 (SIGIO) received
+2023/06/22 13:31:17 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2023/06/22 13:31:17 [notice] 1#1: worker process 33 exited with code 0
+2023/06/22 13:31:17 [notice] 1#1: signal 29 (SIGIO) received
+2023/06/22 13:31:17 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2023/06/22 13:31:17 [notice] 1#1: worker process 28 exited with code 0
+2023/06/22 13:31:17 [notice] 1#1: worker process 31 exited with code 0
+2023/06/22 13:31:17 [notice] 1#1: signal 29 (SIGIO) received
+2023/06/22 13:31:17 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2023/06/22 13:31:17 [notice] 1#1: worker process 29 exited with code 0
+2023/06/22 13:31:17 [notice] 1#1: worker process 35 exited with code 0
+2023/06/22 13:31:17 [notice] 1#1: signal 29 (SIGIO) received
+2023/06/22 13:31:17 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2023/06/22 13:31:17 [notice] 1#1: worker process 34 exited with code 0
+2023/06/22 13:31:17 [notice] 1#1: signal 29 (SIGIO) received
+2023/06/22 13:31:17 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2023/06/22 13:31:17 [notice] 1#1: worker process 30 exited with code 0
+2023/06/22 13:31:17 [notice] 1#1: exit
+2023/06/22 17:02:01 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/22 17:02:02 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/22 17:02:03 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/22 17:02:04 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/22 17:02:06 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/22 17:02:08 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/22 17:02:11 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/22 17:02:18 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/22 17:02:32 [emerg] 1#1: host not found in upstream "news-php" in /etc/nginx/conf.d/default.conf:28
+2023/06/22 17:02:58 [notice] 1#1: using the "epoll" event method
+2023/06/22 17:02:58 [notice] 1#1: nginx/1.23.3
+2023/06/22 17:02:58 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/06/22 17:02:58 [notice] 1#1: OS: Linux 5.15.0-57-generic
+2023/06/22 17:02:58 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/06/22 17:02:58 [notice] 1#1: start worker processes
+2023/06/22 17:02:58 [notice] 1#1: start worker process 28
+2023/06/22 17:02:58 [notice] 1#1: start worker process 29
+2023/06/22 17:02:58 [notice] 1#1: start worker process 30
+2023/06/22 17:02:58 [notice] 1#1: start worker process 31
+2023/06/22 17:02:58 [notice] 1#1: start worker process 32
+2023/06/22 17:02:58 [notice] 1#1: start worker process 33
+2023/06/22 17:02:58 [notice] 1#1: start worker process 34
+2023/06/22 17:02:58 [notice] 1#1: start worker process 35
+2023/06/22 17:03:02 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/06/22 17:03:02 [notice] 29#29: gracefully shutting down
+2023/06/22 17:03:02 [notice] 31#31: gracefully shutting down
+2023/06/22 17:03:02 [notice] 32#32: gracefully shutting down
+2023/06/22 17:03:02 [notice] 34#34: gracefully shutting down
+2023/06/22 17:03:02 [notice] 29#29: exiting
+2023/06/22 17:03:02 [notice] 35#35: gracefully shutting down
+2023/06/22 17:03:02 [notice] 30#30: gracefully shutting down
+2023/06/22 17:03:02 [notice] 31#31: exiting
+2023/06/22 17:03:02 [notice] 32#32: exiting
+2023/06/22 17:03:02 [notice] 34#34: exiting
+2023/06/22 17:03:02 [notice] 35#35: exiting
+2023/06/22 17:03:02 [notice] 30#30: exiting
+2023/06/22 17:03:02 [notice] 29#29: exit
+2023/06/22 17:03:02 [notice] 32#32: exit
+2023/06/22 17:03:02 [notice] 31#31: exit
+2023/06/22 17:03:02 [notice] 35#35: exit
+2023/06/22 17:03:02 [notice] 30#30: exit
+2023/06/22 17:03:02 [notice] 34#34: exit
+2023/06/22 17:03:02 [notice] 28#28: gracefully shutting down
+2023/06/22 17:03:02 [notice] 28#28: exiting
+2023/06/22 17:03:02 [notice] 28#28: exit
+2023/06/22 17:03:02 [notice] 33#33: gracefully shutting down
+2023/06/22 17:03:02 [notice] 33#33: exiting
+2023/06/22 17:03:02 [notice] 33#33: exit
+2023/06/22 17:03:02 [notice] 1#1: signal 17 (SIGCHLD) received from 35
+2023/06/22 17:03:02 [notice] 1#1: worker process 35 exited with code 0
+2023/06/22 17:03:02 [notice] 1#1: signal 29 (SIGIO) received
+2023/06/22 17:03:02 [notice] 1#1: signal 17 (SIGCHLD) received from 34
+2023/06/22 17:03:02 [notice] 1#1: worker process 34 exited with code 0
+2023/06/22 17:03:02 [notice] 1#1: signal 29 (SIGIO) received
+2023/06/22 17:03:02 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2023/06/22 17:03:02 [notice] 1#1: worker process 32 exited with code 0
+2023/06/22 17:03:02 [notice] 1#1: worker process 33 exited with code 0
+2023/06/22 17:03:02 [notice] 1#1: signal 29 (SIGIO) received
+2023/06/22 17:03:02 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2023/06/22 17:03:02 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2023/06/22 17:03:02 [notice] 1#1: worker process 29 exited with code 0
+2023/06/22 17:03:02 [notice] 1#1: worker process 30 exited with code 0
+2023/06/22 17:03:02 [notice] 1#1: worker process 31 exited with code 0
+2023/06/22 17:03:02 [notice] 1#1: signal 29 (SIGIO) received
+2023/06/22 17:03:02 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2023/06/22 17:03:02 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2023/06/22 17:03:02 [notice] 1#1: worker process 28 exited with code 0
+2023/06/22 17:03:02 [notice] 1#1: exit
+2023/06/22 17:03:08 [notice] 1#1: using the "epoll" event method
+2023/06/22 17:03:08 [notice] 1#1: nginx/1.23.3
+2023/06/22 17:03:08 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/06/22 17:03:08 [notice] 1#1: OS: Linux 5.15.0-57-generic
+2023/06/22 17:03:08 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/06/22 17:03:08 [notice] 1#1: start worker processes
+2023/06/22 17:03:08 [notice] 1#1: start worker process 27
+2023/06/22 17:03:08 [notice] 1#1: start worker process 28
+2023/06/22 17:03:08 [notice] 1#1: start worker process 29
+2023/06/22 17:03:08 [notice] 1#1: start worker process 30
+2023/06/22 17:03:08 [notice] 1#1: start worker process 31
+2023/06/22 17:03:08 [notice] 1#1: start worker process 32
+2023/06/22 17:03:08 [notice] 1#1: start worker process 33
+2023/06/22 17:03:08 [notice] 1#1: start worker process 34
+2023/06/22 17:13:42 [warn] 32#32: *10 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/1/00/0000000001 while reading upstream, client: 192.168.40.1, server: localhost, request: "GET /pull-news-api-and-store HTTP/1.1", upstream: "fastcgi://192.168.40.3:9000", host: "localhost:8089"
+2023/06/22 17:21:34 [warn] 34#34: *24 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/2/00/0000000002 while reading upstream, client: 192.168.40.1, server: localhost, request: "GET /pull-news-api-and-store HTTP/1.1", upstream: "fastcgi://192.168.40.3:9000", host: "localhost:8089"
+2023/06/22 20:05:10 [warn] 28#28: *100 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/3/00/0000000003 while reading upstream, client: 192.168.40.1, server: localhost, request: "PATCH /api/preference/1 HTTP/1.1", upstream: "fastcgi://192.168.40.3:9000", host: "localhost:8089"
+2023/06/22 20:35:46 [warn] 28#28: *119 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/4/00/0000000004 while reading upstream, client: 192.168.40.1, server: localhost, request: "PATCH /api/preference/1 HTTP/1.1", upstream: "fastcgi://192.168.40.3:9000", host: "localhost:8089"

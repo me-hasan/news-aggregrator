@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Api\UserController;
+use App\Http\Controllers\Api\UserPreferenceController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -28,5 +29,17 @@ Route::controller(UserController::class)->group(function(){
 
 Route::controller(UserController::class)->group(function(){
     Route::get('user', 'getuserInfo');
+    Route::put('profile/{user}', 'profileUpdate');
+    Route::patch('profile/{user}', 'profileUpdate');
     Route::get('logout', 'userLogout');
+})->middleware('auth.api');
+
+
+Route::controller(UserPreferenceController::class)->group(function(){
+    Route::get('preference', 'index');
+    Route::post('preference', 'store');
+    Route::get('preference/{preference}', 'show');
+    Route::put('preference/{preference}', 'update');
+    Route::patch('preference/{preference}', 'update');
+    Route::delete('preference/{preference}', 'destroy');
 })->middleware('auth.api');
