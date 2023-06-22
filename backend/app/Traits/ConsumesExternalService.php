@@ -12,6 +12,7 @@ trait ConsumesExternalService
      */
     public function performRequest($method)
     {
+        
         $client = new Client([
             'base_uri' => $this->baseUri,
         ]);

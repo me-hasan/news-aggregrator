@@ -2,13 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Teacher;
+use App\Models\NewsArchive;
 use App\Services\NewsApiService;
 use App\Traits\ApiResponser;
 use Illuminate\Http\Request;
-use Illuminate\Http\Response;
 
-class NewsApiController extends Controller 
+class NewsApiController extends Controller
 {
     use ApiResponser;
 
@@ -25,51 +24,20 @@ class NewsApiController extends Controller
      */
     public function __construct(NewsApiService $newsApiService)
     {
+
         $this->newApiService = $newsApiService;
     }
 
     /**
-     * Return the list of teacher
+     * Return the list of news and store
      * @return Illuminate\Http\Response
      */
-    public function index()
+    public function obtainNewsAndStore()
     {
-        return $this->successResponse($this->newApiService->obtainNews());
-    }
+         $newsArchive = $this->newApiService->newsFormatter()->toArray();
+         NewsArchive::insert($newsArchive);
 
-    /**
-     * Create one new teacher
-     * @return Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        return $this->successResponse($this->newApiService->createTeacher($request->all(), Response::HTTP_CREATED));
-    }
+         return $this->successMessage('Successfully Saved!');
 
-    /**
-     * Obtains and show one teacher
-     * @return Illuminate\Http\Response
-     */
-    public function show($teacher)
-    {
-        return $this->successResponse($this->newApiService->obtainTeacher($teacher));
-    }
-
-    /**
-     * Update an existing teacher
-     * @return Illuminate\Http\Response
-     */
-    public function update(Request $request, $teacher)
-    {
-        return $this->successResponse($this->newApiService->editTeacher($request->all(), $teacher));
-    }
-
-    /**
-     * Remove an existing teacher
-     * @return Illuminate\Http\Response
-     */
-    public function destroy($teacher)
-    {
-        return $this->successResponse($this->newApiService->deleteTeacher($teacher));
     }
 }

@@ -4,5 +4,6 @@ namespace App\Services;
 
 interface NewsInterface {
 
-    public function obtainNews();
+    public function newsFormatter();
+
 }

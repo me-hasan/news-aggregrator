@@ -22,6 +22,18 @@ trait ApiResponser
      * Build error responses
      * @param  string|array $message
      * @param  int $code
+     * @return Illuminate\Http\Response
+     */
+    public function successMessage($message, $code = Response::HTTP_OK)
+    {
+        return response()->json(['success' => $message, 'code' => $code], $code);
+
+    }
+
+    /**
+     * Build error responses
+     * @param  string|array $message
+     * @param  int $code
      * @return Illuminate\Http\JsonResponse
      */
     public function errorResponse($message, $code)

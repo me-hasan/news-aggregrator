@@ -3,6 +3,8 @@
 namespace App\Services;
 
 use App\Traits\ConsumesExternalService;
+use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Support\Carbon;
 
 class NewsApiService implements NewsInterface
 {
@@ -19,52 +21,34 @@ class NewsApiService implements NewsInterface
 
     public function __construct()
     {
-        $this->baseUri = config('services.newsApi.base_uri');
+        $this->baseUri = config('services.external_api.news_api');
     }
 
     /**
-     * Obtain the full list of teacher from the teacher service
+     * Obtain the full list of news from api and store to database
      * @return string
      */
-    public function obtainNews()
+    public function newsFormatter()
     {
-        return $this->performRequest('GET');
-    }
+        $newsList = $this->performRequest('GET');
+        
+        $object = json_decode($newsList)->sources;
 
-    /**
-     * Create one teacher using the teacher service
-     * @return string
-     */
-    public function createTeacher($data)
-    {
-        return $this->performRequest('POST', '/teachers', $data);
-    }
+        $collection = new Collection();
+            foreach($object as $key=>$item){
+                $collection->push([
+                'news_id' => $object[$key]->id,
+                'name' => $object[$key]->name,
+                'description' => $object[$key]->description,
+                'url' => $object[$key]->url,
+                'category' => $object[$key]->category,
+                'country' => $object[$key]->country,
+                'language' => $object[$key]->language
+            ]);
+        }   
 
-    /**
-     * Obtain one single teacher from the teacher service
-     * @return string
-     */
-    public function obtainTeacher($teacher)
-    {
-        return $this->performRequest('GET', "/teachers/{$teacher}");
-    }
-
-    /**
-     * Update an instance of teacher using the teacher service
-     * @return string
-     */
-    public function editTeacher($data, $teacher)
-    {
-        return $this->performRequest('PUT', "/teachers/{$teacher}", $data);
-    }
-
-    /**
-     * Remove a single teacher using the teacher service
-     * @return string
-     */
-    public function deleteTeacher($teacher)
-    {
-        return $this->performRequest('DELETE', "/teachers/{$teacher}");
+        return $collection;   
+        
     }
 
 

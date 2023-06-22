@@ -2,15 +2,14 @@
 
 namespace App\Exceptions;
 
-use Exception;
 use App\Traits\ApiResponser;
-use GuzzleHttp\Exception\ClientException;
 use Illuminate\Http\Response;
-use Illuminate\Auth\AuthenticationException;
+use GuzzleHttp\Exception\ClientException;
 use Illuminate\Auth\Access\AuthorizationException;
+use Illuminate\Auth\AuthenticationException;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Validation\ValidationException;
-use Laravel\Lumen\Exceptions\Handler as ExceptionHandler;
+use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 use Throwable;
 
@@ -29,6 +28,7 @@ class Handler extends ExceptionHandler
         ValidationException::class,
     ];
 
+
     /**
      * Report or log an exception.
      *
@@ -42,6 +42,28 @@ class Handler extends ExceptionHandler
     public function report(Throwable $exception)
     {
         parent::report($exception);
+    }
+
+    
+    /**
+     * The list of the inputs that are never flashed to the session on validation exceptions.
+     *
+     * @var array<int, string>
+     */
+    protected $dontFlash = [
+        'current_password',
+        'password',
+        'password_confirmation',
+    ];
+
+    /**
+     * Register the exception handling callbacks for the application.
+     */
+    public function register(): void
+    {
+        $this->reportable(function (Throwable $e) {
+            //
+        });
     }
 
     /**
