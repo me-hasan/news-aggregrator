@@ -107,7 +107,6 @@ class UserPreferenceController extends Controller
         $preference = UserPreference::where('user_id', $userId)->first()->category ?? null;
         $newsFeed = NewsArchive::whereIn('category', [$preference])->get();
         return $this->successResponse(['status'=> 200,'data'=> $newsFeed], 200);
-        
     }
 
 

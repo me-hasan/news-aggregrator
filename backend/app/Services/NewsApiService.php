@@ -12,29 +12,35 @@ class NewsApiService implements NewsInterface
     use ConsumesExternalService;
 
     /**
-     * The base uri to consume the authors service
+     * The base uri to consume the news api
      * @var string
      */
     public $baseUri;
 
     
-
-
     public function __construct()
     {
-        $this->baseUri = config('services.external_api.news_api');
+        $this->baseUri = config('newssources.external_api.news_api.url');
     }
 
+
     /**
-     * Obtain the full list of news from api and store to database
+     * Obtain the full list of news from api
      * @return string
      */
-    public function newsFormatter()
-    {
+    public function getDataFromSource(){
         $newsList = $this->performRequest('GET');
-        
         $newsObject = collect(json_decode($newsList)->sources);
-        
+        return $this->newsFormatter($newsObject);
+    }
+
+
+    /**
+     * Formate data for storing to database
+     * @return string
+     */
+    public function newsFormatter($newsObject)
+    {
         $newsCollection = new Collection();
         $newsObject->map(function ($news) use ($newsCollection){
             if(!NewsArchive::where('news_id', $news->id)->exists()){
@@ -54,7 +60,6 @@ class NewsApiService implements NewsInterface
             }
          });
          return $newsCollection;
-           
         
     }
 

@@ -34,7 +34,7 @@ class NewsApiController extends Controller
      */
     public function pullArticlesAndStore()
     {
-         $newsArray = $this->newApiService->newsFormatter()->toArray();
+         $newsArray = $this->newApiService->getDataFromSource()->toArray();
         
          NewsArchive::insert($newsArray);
 
