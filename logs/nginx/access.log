@@ -466,3 +466,6 @@
 192.168.40.1 - - [23/Jun/2023:18:13:13 +0000] "GET /pull-articles-and-store HTTP/1.1" 500 1083962 "-" "PostmanRuntime/7.28.4" "-"
 192.168.40.1 - - [23/Jun/2023:18:14:01 +0000] "GET /pull-articles-and-store HTTP/1.1" 200 78 "-" "PostmanRuntime/7.28.4" "-"
 192.168.40.1 - - [23/Jun/2023:18:42:47 +0000] "GET /pull-articles-and-store HTTP/1.1" 200 78 "-" "PostmanRuntime/7.28.4" "-"
+192.168.40.1 - - [23/Jun/2023:18:59:51 +0000] "GET /pull-articles-and-store HTTP/1.1" 200 78 "-" "PostmanRuntime/7.28.4" "-"
+192.168.40.1 - - [23/Jun/2023:20:23:28 +0000] "GET /pull-articles-and-store HTTP/1.1" 404 43 "-" "PostmanRuntime/7.28.4" "-"
+192.168.40.1 - - [23/Jun/2023:20:23:33 +0000] "POST /api/login HTTP/1.1" 200 1017 "-" "PostmanRuntime/7.28.4" "-"

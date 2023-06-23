@@ -5,10 +5,19 @@ namespace App\Console\Commands;
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
-use App\Http\Controllers\NewsApiController;
+
+
 
 class PullNewsScheduled extends Command
 {
+    /**
+     * The external api to consume the news api
+     * @var string
+     */
+    public $externalApi;
+
+    
+
     /**
      * The name and signature of the console command.
      *
@@ -27,8 +36,12 @@ class PullNewsScheduled extends Command
      * Execute the console command.
      */
     public function handle()
-    {
-        $controller = app(NewsApiController::class);
-        $controller->obtainNewsAndStore();
+    {   
+        $apiConfig = config('newssources.external_api');
+        foreach($apiConfig as $key=> $config){
+            $config['job']::dispatch(new $config['service']);
+        }
+        
+          
     }
 }
