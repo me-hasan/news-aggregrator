@@ -3,10 +3,12 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Models\NewsArchive;
 use App\Models\UserPreference;
 use App\Traits\ApiResponser;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use Auth;
 
 
 class UserPreferenceController extends Controller
@@ -62,7 +64,7 @@ class UserPreferenceController extends Controller
     public function update(Request $request, $preference) 
     {
         $rules = [
-            'user_id' => 'required|number',
+            'user_id' => 'required',
             'category' => 'required',
             'language' => 'required',
             'country' => 'required',
@@ -95,6 +97,19 @@ class UserPreferenceController extends Controller
         return $this->successResponse(['status'=> 200,'message'=> 'Successfully Deleted!'], 200);
 
     }
+
+    /*
+    * News Feed
+    */
+    public function newsFeed()
+    {
+        $userId = Auth::guard('api')->user()->id ?? null;
+        $preference = UserPreference::where('user_id', $userId)->first()->category ?? null;
+        $newsFeed = NewsArchive::whereIn('category', [$preference])->get();
+        return $this->successResponse(['status'=> 200,'data'=> $newsFeed], 200);
+        
+    }
+
 
     
 }

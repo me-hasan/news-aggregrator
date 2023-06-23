@@ -30,7 +30,7 @@ Route::controller(UserController::class)->group(function(){
 Route::controller(UserController::class)->group(function(){
     Route::get('user', 'getuserInfo');
     Route::put('profile/{user}', 'profileUpdate');
-    Route::patch('profile/{user}', 'profileUpdate');
+    Route::patch('profile-update/{user}', 'profileUpdate');
     Route::get('logout', 'userLogout');
 })->middleware('auth.api');
 
@@ -42,4 +42,5 @@ Route::controller(UserPreferenceController::class)->group(function(){
     Route::put('preference/{preference}', 'update');
     Route::patch('preference/{preference}', 'update');
     Route::delete('preference/{preference}', 'destroy');
+    Route::get('news-feed', 'newsFeed');
 })->middleware('auth.api');
