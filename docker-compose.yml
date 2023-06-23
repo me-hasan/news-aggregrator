@@ -11,9 +11,9 @@ services:
     ports:
       - 8089:80
     volumes:
-      - ./backend:/public_html
-      - ./conf.d:/etc/nginx/conf.d
-      - ./logs/nginx:/var/log/nginx/
+      - ./backend/src:/public_html
+      - ./backend/conf.d:/etc/nginx/conf.d
+      - ./backend/logs/nginx:/var/log/nginx/
     depends_on:
       - php
    
@@ -26,8 +26,8 @@ services:
       context: ./php-fpm          
       dockerfile: Dockerfile    
     volumes:
-      - ./backend:/public_html
-      - ./logs/php-fpm:/var/log/fpm-php.www.log
+      - ./backend/src:/public_html
+      - ./backend/logs/php-fpm:/var/log/fpm-php.www.log
       #- ./php.ini:/usr/local/etc/
     expose:
       - 9000
@@ -37,7 +37,7 @@ services:
   composer:
         image: composer
         volumes:
-            - ./backend:/public_html
+            - ./backend/src:/public_html
         command: install
 
 
@@ -54,7 +54,7 @@ services:
       SERVICE_TAGS: dev
       SERVICE_NAME: mysql
     volumes:
-      - ./mysql_db/data:/var/lib/mysql
+      - ./backend/mysql_db/data:/var/lib/mysql
     ports:
       - 3307:3306  
 
