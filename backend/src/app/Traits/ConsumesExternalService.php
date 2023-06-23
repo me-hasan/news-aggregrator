@@ -13,7 +13,7 @@ trait ConsumesExternalService
     public function performRequest($method)
     {
         $client = new Client([
-            'base_uri' => $this->baseUri,
+            'base_uri' => $this->uri,
         ]);
         $response = $client->request($method);
         return $response->getBody()->getContents();
