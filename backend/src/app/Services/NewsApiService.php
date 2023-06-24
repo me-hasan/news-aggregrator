@@ -12,7 +12,7 @@ class NewsApiService implements NewsInterface
     use ConsumesExternalService;
 
     /**
-     * The api uri to consume the news api
+     * The api uri path
      * @var string
      */
     public $uri;
@@ -21,7 +21,6 @@ class NewsApiService implements NewsInterface
     public function __construct()
     {
         $this->uri = config('newssources.external_api.news_api.url');
-        
     }
 
 
@@ -60,9 +59,6 @@ class NewsApiService implements NewsInterface
                 );
             }
          });
-         return $newsCollection;
-        
+         return $newsCollection;    
     }
-
-
 }

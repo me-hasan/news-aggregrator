@@ -4,6 +4,7 @@ namespace App\Console\Commands;
 
 namespace App\Console\Commands;
 
+use App\Jobs\PullNewsJob;
 use Illuminate\Console\Command;
 
 
@@ -39,7 +40,7 @@ class PullNewsScheduled extends Command
     {   
         $apiConfig = config('newssources.external_api');
         foreach($apiConfig as $key=> $config){
-            $config['job']::dispatch(new $config['service']);
+            PullNewsJob::dispatch(new $config['service']);
         }
         
           

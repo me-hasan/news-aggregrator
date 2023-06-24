@@ -59,12 +59,12 @@ services:
       - 3307:3306  
 
 
-  # News Portal
+  # Frontend
   # portal:
   #   container_name: news-portal
   #   hostname: newsaggregatorportalsrv
   #   build:
-  #     context: ./frontend/news-portal     
+  #     context: ./frontend    
   #     dockerfile: Dockerfile                        
   #   restart: unless-stopped
   #   environment:
