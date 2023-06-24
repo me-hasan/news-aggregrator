@@ -101,11 +101,16 @@ class UserPreferenceController extends Controller
     /*
     * News Feed
     */
-    public function newsFeed()
+    public function newsFeed($userId)
     {
-        $userId = Auth::guard('api')->user()->id ?? null;
         $preference = UserPreference::where('user_id', $userId)->first()->category ?? null;
         $newsFeed = NewsArchive::whereIn('category', [$preference])->get();
         return $this->successResponse(['status'=> 200,'data'=> $newsFeed], 200);
     }   
+
+    public function allNews()
+    {
+        $news = NewsArchive::all();
+        return $this->successResponse(['status'=> 200,'data'=> $news], 200);
+    }
 }

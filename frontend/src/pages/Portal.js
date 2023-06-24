@@ -1,3 +1,4 @@
+import News from "../components/News";
 import Navigation from "../components/dashboard/Navigation";
 
 export default function Portal() {
@@ -6,7 +7,7 @@ export default function Portal() {
             <Navigation />
             <div className="max-w-7xl mx-auto -mt-1">
                 <div className="min-w-full border rounded flex lg:grid lg:grid-cols-3">
-
+                        <News/>
                 </div>
             </div>
         </div>

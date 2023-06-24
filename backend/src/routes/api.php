@@ -42,5 +42,9 @@ Route::controller(UserPreferenceController::class)->group(function(){
     Route::put('preference/{preference}', 'update');
     Route::patch('preference/{preference}', 'update');
     Route::delete('preference/{preference}', 'destroy');
-    Route::get('news-feed', 'newsFeed');
+    Route::get('news-feed/{user}', 'newsFeed');
 })->middleware('auth.api');
+
+Route::controller(UserPreferenceController::class)->group(function(){
+    Route::get('all-news', 'allNews');
+});
