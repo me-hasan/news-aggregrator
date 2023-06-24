@@ -18,7 +18,7 @@ export default function Login() {
         if (responseError?.data) {
             setError(responseError.data);
         }
-        if (data?.accessToken) {
+        if (data?.accessToken && data?.user) {
             navigate("/dashboard");
         }
     }, [data, responseError, navigate]);

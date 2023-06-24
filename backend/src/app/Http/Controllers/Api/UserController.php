@@ -79,7 +79,7 @@ class UserController extends Controller
         $user = Auth::user();
         if(isset($user)){
             $token = $user->createToken('News')->accessToken;
-            return $this->successResponse(['status'=> 200,'accessToken'=> $token], 200);
+            return $this->successResponse(['status'=> 200,'accessToken'=> $token, 'user'=> $user], 200);
         }else{
             return $this->successResponse(['status'=> 201,'message'=> 'Credentials is not valid!'], 201);
         }

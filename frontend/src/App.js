@@ -3,18 +3,55 @@ import Portal from "./pages/Portal";
 import Dashboard from "./pages/Dashboard";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import PrivateRoute from "./components/PrivateRoute";
+import PublicRoute from "./components/PublicRoute";
+import useAuthCheck from "./hooks/useAuthCheck";
 
 function App() {
-    return (
+    const authChecked = useAuthCheck();
+
+    return !authChecked ? (
+        <div>Checking authentication....</div>
+    ) : (
         <Router>
             <Routes>
-                <Route path="/" element={<Portal />} />
-                <Route path="/login" element={<Login />} />
-                <Route path="/register" element={<Register />} />
-                <Route path="/dashboard" element={<Dashboard />} />
+                <Route
+                    path="/"
+                    element={
+                        <PublicRoute>
+                            <Portal />
+                        </PublicRoute>
+                    }
+                />
+                <Route
+                    path="/login"
+                    element={
+                        <PublicRoute>
+                            <Login />
+                        </PublicRoute>
+                    }
+                />
+                <Route
+                    path="/register"
+                    element={
+                        <PublicRoute>
+                            <Register />
+                        </PublicRoute>
+                    }
+                />
+                <Route
+                    path="/dashboard"
+                    element={
+                        <PrivateRoute>
+                            <Dashboard />
+                        </PrivateRoute>
+                    }
+                />
             </Routes>
         </Router>
     );
+        
+
 }
 
 export default App;

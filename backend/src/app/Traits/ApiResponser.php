@@ -27,7 +27,6 @@ trait ApiResponser
     public function successMessage($message, $code = Response::HTTP_OK)
     {
         return response()->json(['success' => $message, 'code' => $code], $code);
-
     }
 
     /**

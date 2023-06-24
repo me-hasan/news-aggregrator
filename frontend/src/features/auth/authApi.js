@@ -12,19 +12,18 @@ export const authApi = apiSlice.injectEndpoints({
             async onQueryStarted(arg, { queryFulfilled, dispatch }) {
                 try {
                     const result = await queryFulfilled;
+                    console.log(result);
 
                     localStorage.setItem(
                         "auth",
                         JSON.stringify({
                             accessToken: result.data.accessToken,
-                            user: result.data.user,
                         })
                     );
 
                     dispatch(
                         userLoggedIn({
                             accessToken: result.data.accessToken,
-                            user: result.data.user,
                         })
                     );
                 } catch (err) {
@@ -62,7 +61,34 @@ export const authApi = apiSlice.injectEndpoints({
                 }
             },
         }),
+        logout: builder.query({
+            query: (data) => ({
+                url: '/logout',
+                method: 'GET',
+              }),
+
+            async onQueryStarted(arg, { queryFulfilled, dispatch }) {
+                try {
+                    const result = await queryFulfilled;
+
+                    localStorage.setItem(
+                        "auth",
+                        JSON.stringify({
+                            accessToken: undefined,
+                        })
+                    );
+
+                    dispatch(
+                        userLoggedIn({
+                            accessToken: undefined,
+                        })
+                    );
+                } catch (err) {
+                    // do nothing
+                }
+            },
+        }),
     }),
 });
 
-export const { useLoginMutation, useRegisterMutation } = authApi;
+export const { useLoginMutation, useRegisterMutation, useLogoutQuery } = authApi;

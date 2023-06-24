@@ -14,15 +14,13 @@ export default function Register() {
 
     const [register, { data, isLoading, error: responseError }] =
         useRegisterMutation();
-
     const navigate = useNavigate();
 
     useEffect(() => {
         if (responseError?.data) {
             setError(responseError.data);
         }
-        console.log(data);
-        if (data?.status) {
+        if (data?.accessToken && data?.user) {
             navigate("/login");
         }
     }, [data, responseError, navigate]);
