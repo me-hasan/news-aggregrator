@@ -21,8 +21,9 @@ export default function Register() {
         if (responseError?.data) {
             setError(responseError.data);
         }
-        if (data?.accessToken && data?.user) {
-            navigate("/dashboard");
+        console.log(data);
+        if (data?.status) {
+            navigate("/login");
         }
     }, [data, responseError, navigate]);
 

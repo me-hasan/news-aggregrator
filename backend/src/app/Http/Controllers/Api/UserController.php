@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Hash;
 use Auth;
+use Carbon\Carbon;
 
 class UserController extends Controller
 {
@@ -33,9 +34,10 @@ class UserController extends Controller
         if (isset($parameters['password'])) {
             $parameters['password'] = Hash::make($parameters['password']);
         }
+        $parameters['email_verified_at'] = Carbon::now();
         $user = User::create($parameters);
         
-        return $this->successResponse($user, Response::HTTP_CREATED);
+        return $this->successResponse(['status'=> true, 'data'=>$user], Response::HTTP_CREATED);
     }
 
 
@@ -77,7 +79,7 @@ class UserController extends Controller
         $user = Auth::user();
         if(isset($user)){
             $token = $user->createToken('News')->accessToken;
-            return $this->successResponse(['status'=> 200,'token'=> $token], 200);
+            return $this->successResponse(['status'=> 200,'accessToken'=> $token], 200);
         }else{
             return $this->successResponse(['status'=> 201,'message'=> 'Credentials is not valid!'], 201);
         }

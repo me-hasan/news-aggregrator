@@ -43,7 +43,7 @@ export default function Login() {
                             <img
                                 className="mx-auto h-12 w-auto"
                                 src={logoImage}
-                                alt="News Aggregator"
+                                alt="Learn with sumit"
                             />
                         </Link>
                         <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
