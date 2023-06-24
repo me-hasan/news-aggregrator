@@ -7,7 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class UserPreference extends Model 
 {
-
     /**
      * The attributes that are mass assignable.
      *
@@ -15,7 +14,5 @@ class UserPreference extends Model
      */
     protected $fillable = [
         'user_id', 'category', 'language', 'country', 'author'
-    ];
-
-    
+    ];    
 }

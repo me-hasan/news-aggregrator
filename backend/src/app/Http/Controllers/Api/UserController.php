@@ -111,8 +111,5 @@ class UserController extends Controller
             return $this->successResponse(['status'=> 200,'message'=> 'Successfully logout!'], 200);
         }
         return $this->successResponse(['status'=> 401,'data'=> 'Unathenticated'], 401);
-
-    }
-
-    
+    }    
 }

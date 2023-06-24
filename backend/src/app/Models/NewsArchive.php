@@ -7,7 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class NewsArchive extends Model 
 {
-
     /**
      * The attributes that are mass assignable.
      *
@@ -15,7 +14,5 @@ class NewsArchive extends Model
      */
     protected $fillable = [
         'news_id', 'name', 'description', 'url', 'category', 'language', 'country'
-    ];
-
-    
+    ];    
 }
