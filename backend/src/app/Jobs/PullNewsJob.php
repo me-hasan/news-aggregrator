@@ -35,8 +35,8 @@ class PullNewsJob implements ShouldQueue
      */
     public function handle(): void
     {
-        $newsArray = $this->newsInterface->getDataFromSource()->toArray();
-        
+        $existNewsId = NewsArchive::all()->pluck('news_id');
+        $newsArray = $this->newsInterface->getDataFromSource()->whereNotIn('news_id', $existNewsId)->toArray();
         NewsArchive::insert($newsArray);
     }
 }

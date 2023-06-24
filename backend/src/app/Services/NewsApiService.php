@@ -43,21 +43,19 @@ class NewsApiService implements NewsInterface
     {
         $newsCollection = new Collection();
         $newsObject->map(function ($news) use ($newsCollection){
-            if(!NewsArchive::where('news_id', $news->id)->exists()){
-                return $newsCollection->push(
-                    [
-                        'news_id' => $news->id,
-                        'name' => $news->name,
-                        'description' => $news->description,
-                        'url' => $news->url,
-                        'category' => $news->category,
-                        'country' => $news->country,
-                        'language' => $news->language,
-                        'created_at' => Carbon::now(),
-                        'updated_at' => Carbon::now()
-                    ]
-                );
-            }
+            return $newsCollection->push(
+                [
+                    'news_id' => $news->id,
+                    'name' => $news->name,
+                    'description' => $news->description,
+                    'url' => $news->url,
+                    'category' => $news->category,
+                    'country' => $news->country,
+                    'language' => $news->language,
+                    'created_at' => Carbon::now(),
+                    'updated_at' => Carbon::now()
+                ]
+            );
          });
          return $newsCollection;    
     }
