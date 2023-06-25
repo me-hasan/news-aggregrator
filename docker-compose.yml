@@ -60,17 +60,17 @@ services:
 
 
   # Frontend
-  # portal:
-  #   container_name: news-portal
-  #   hostname: newsaggregatorportalsrv
-  #   build:
-  #     context: ./frontend    
-  #     dockerfile: Dockerfile                        
-  #   restart: unless-stopped
-  #   environment:
-  #     TZ: "Asia/Dhaka"
-  #   ports: 
-  #     - 8088:80
+  portal:
+    container_name: news-portal
+    hostname: newsaggregatorportalsrv
+    build:
+      context: ./frontend    
+      dockerfile: Dockerfile                        
+    restart: always
+    environment:
+      TZ: "Asia/Dhaka"
+    ports: 
+      - 8088:80
       
 
 
