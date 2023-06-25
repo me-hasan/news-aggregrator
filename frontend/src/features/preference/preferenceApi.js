@@ -3,8 +3,8 @@ import { apiSlice } from "../api/apiSlice";
 export const preferenceApi = apiSlice.injectEndpoints({
     endpoints: (builder) => ({
         getPreference: builder.query({
-            query: () => ({
-                url: `/preference`,
+            query: (user) => ({
+                url: `/preference/${user}`,
                 method: 'GET',
             }),
         }),

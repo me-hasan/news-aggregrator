@@ -37,13 +37,12 @@ Route::controller(UserController::class)->group(function(){
 
 
 Route::controller(UserPreferenceController::class)->group(function(){
-    Route::get('preference', 'index');
+    Route::get('preference/{user}', 'index');
     Route::post('preference', 'store');
     Route::get('preference/{preference}', 'show');
     Route::put('preference/{preference}', 'update');
     Route::patch('preference/{preference}', 'update');
     Route::delete('preference/{preference}', 'destroy');
-    Route::get('news-feed/{user}', 'newsFeed');
 })->middleware('auth.api');
 
 

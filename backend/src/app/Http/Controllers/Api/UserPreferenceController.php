@@ -18,9 +18,9 @@ class UserPreferenceController extends Controller
     /**
      * Return the list of user's preference.
      */
-    public function Index() : Response
+    public function Index($user) : Response
     {
-        $preferences = UserPreference::all();
+        $preferences = UserPreference::where('user_id', $user)->get();
         return $this->successResponse(['status'=> 200,'data'=> $preferences], 200);
         
     }

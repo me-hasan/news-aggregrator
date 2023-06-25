@@ -6,6 +6,8 @@ import PrivateRoute from "./components/PrivateRoute";
 import PublicRoute from "./components/PublicRoute";
 import useAuthCheck from "./hooks/useAuthCheck";
 import Dashboard from "./pages/dashboard/Dashboard";
+import Preference from "./pages/dashboard/Preference";
+import PreferenceForm from "./pages/dashboard/PreferenceForm";
 
 function App() {
     const authChecked = useAuthCheck();
@@ -44,6 +46,22 @@ function App() {
                     element={
                         <PrivateRoute>
                             <Dashboard />
+                        </PrivateRoute>
+                    }
+                />
+                <Route
+                    path="/preference"
+                    element={
+                        <PrivateRoute>
+                            <Preference />
+                        </PrivateRoute>
+                    }
+                />
+                <Route
+                    path="/add-preference"
+                    element={
+                        <PrivateRoute>
+                            <PreferenceForm />
                         </PrivateRoute>
                     }
                 />
