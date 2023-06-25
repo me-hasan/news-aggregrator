@@ -2,6 +2,7 @@ import { configureStore } from "@reduxjs/toolkit";
 import { apiSlice } from "../features/api/apiSlice";
 import authSliceReducer from "../features/auth/authSlice";
 import allNewsSliceReducer from "../features/allnews/allNewsSlice";
+import newsFeedSliceReducer from "../features/newsfeed/newsFeedSlice";
 
 
 export const store = configureStore({
@@ -9,6 +10,7 @@ export const store = configureStore({
         [apiSlice.reducerPath]: apiSlice.reducer,
         auth: authSliceReducer,
         news: allNewsSliceReducer,
+        newsfeed: newsFeedSliceReducer
     },
     devTools: process.env.NODE_ENV !== "production",
     middleware: (getDefaultMiddlewares) =>

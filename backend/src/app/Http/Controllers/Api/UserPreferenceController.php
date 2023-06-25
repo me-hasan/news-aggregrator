@@ -95,22 +95,5 @@ class UserPreferenceController extends Controller
         $preference = UserPreference::findOrFail($preference);
         $preference->delete();
         return $this->successResponse(['status'=> 200,'message'=> 'Successfully Deleted!'], 200);
-
-    }
-
-    /*
-    * News Feed
-    */
-    public function newsFeed($userId)
-    {
-        $preference = UserPreference::where('user_id', $userId)->first()->category ?? null;
-        $newsFeed = NewsArchive::whereIn('category', [$preference])->get();
-        return $this->successResponse(['status'=> 200,'data'=> $newsFeed], 200);
-    }   
-
-    public function allNews()
-    {
-        $news = NewsArchive::all();
-        return $this->successResponse(['status'=> 200,'data'=> $news], 200);
     }
 }

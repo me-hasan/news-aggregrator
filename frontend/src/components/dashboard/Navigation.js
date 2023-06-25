@@ -16,7 +16,12 @@ export default function Navigation() {
     const isLoggedIn = useAuth();
     let button;
     if (isLoggedIn) {      
-        button = <span className="cursor-pointer" onClick={logout}>Logout</span>;    
+        button = (
+            <>
+                <Link to="/login"><span className="cursor-pointer bg-red-200 text-gray-700 px-2 py-2 rounded-full text-sm mr-2 mb-2 hover:bg-red-400">My Preferences</span></Link>
+                <span className="cursor-pointer bg-green-200 text-gray-700 px-2 py-2 rounded-full text-sm mr-2 mb-2 hover:bg-green-400" onClick={logout}>Logout</span>
+            </>
+        );    
     } else {
         button = <Link to="/login"><span className="cursor-pointer">Login</span></Link>;    
     }

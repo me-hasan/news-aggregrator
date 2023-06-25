@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\NewsController;
 use App\Http\Controllers\Api\UserController;
 use App\Http\Controllers\Api\UserPreferenceController;
 use Illuminate\Http\Request;
@@ -45,6 +46,12 @@ Route::controller(UserPreferenceController::class)->group(function(){
     Route::get('news-feed/{user}', 'newsFeed');
 })->middleware('auth.api');
 
-Route::controller(UserPreferenceController::class)->group(function(){
+
+Route::controller(NewsController::class)->group(function(){
+    Route::get('news-feed/{user}', 'newsFeed');
+})->middleware('auth.api');
+
+
+Route::controller(NewsController::class)->group(function(){
     Route::get('all-news', 'allNews');
 });

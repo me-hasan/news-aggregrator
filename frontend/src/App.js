@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Portal from "./pages/Portal";
-import Dashboard from "./pages/Dashboard";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import PrivateRoute from "./components/PrivateRoute";
 import PublicRoute from "./components/PublicRoute";
 import useAuthCheck from "./hooks/useAuthCheck";
+import Dashboard from "./pages/dashboard/Dashboard";
 
 function App() {
     const authChecked = useAuthCheck();
