@@ -3287,3 +3287,17 @@
 2023/06/25 15:53:45 [notice] 1#1: signal 17 (SIGCHLD) received from 33
 2023/06/25 15:53:45 [notice] 1#1: worker process 33 exited with code 0
 2023/06/25 15:53:45 [notice] 1#1: exit
+2023/06/25 15:55:33 [notice] 1#1: using the "epoll" event method
+2023/06/25 15:55:33 [notice] 1#1: nginx/1.23.3
+2023/06/25 15:55:33 [notice] 1#1: built by gcc 10.2.1 20210110 (Debian 10.2.1-6) 
+2023/06/25 15:55:33 [notice] 1#1: OS: Linux 5.15.0-57-generic
+2023/06/25 15:55:33 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/06/25 15:55:33 [notice] 1#1: start worker processes
+2023/06/25 15:55:33 [notice] 1#1: start worker process 28
+2023/06/25 15:55:33 [notice] 1#1: start worker process 29
+2023/06/25 15:55:33 [notice] 1#1: start worker process 30
+2023/06/25 15:55:33 [notice] 1#1: start worker process 31
+2023/06/25 15:55:33 [notice] 1#1: start worker process 32
+2023/06/25 15:55:33 [notice] 1#1: start worker process 33
+2023/06/25 15:55:33 [notice] 1#1: start worker process 34
+2023/06/25 15:55:33 [notice] 1#1: start worker process 35
