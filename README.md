@@ -33,7 +33,7 @@ Please follow the below instructions to run this branch in your machine:
 
 5. Go to the news-php container
    ```sh
-   docker compose exec -it news-php sh
+   docker exec -it news-php sh
    cd /public_html   
    ```
 
@@ -54,9 +54,10 @@ Please follow the below instructions to run this branch in your machine:
    ```
 8. Go to the news-php container
    ```sh
-   docker compose exec -it news-php sh
+   sudo docker exec -it news-php sh
    cd /public_html   
    php artisan migrate:fresh --seed
+   php artisan update-news-archive:run
    ```
 
 9. App should be available in http://localhost:8088
