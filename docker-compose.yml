@@ -33,6 +33,45 @@ services:
       - 9000
 
 
+
+  #redis
+  # cache: 
+  #   container_name: redis-server
+  #   hostname: redisserversrv
+  #   # build: 
+  #   #   context: ./redis          # defines either a path to a directory containing a Dockerfile, or a url to a git repository
+  #   #   dockerfile: Dockerfile
+  #   image: redis:alpine
+  #   restart: always  
+  #   ports:
+  #     - '6379:6379'
+  #   volumes: 
+  #     - ./redis/cache:/data
+  #   command: redis-server --save 20 1 --loglevel warning --requirepass eYVX7EwVmmxKPCDmwMtyKVge8oLd2t81  
+
+
+
+  #supervisor
+  # supervisor:
+  #   container_name: supervisor-server
+  #   hostname: supervisorserversrv
+  #   build: 
+  #     context: ./supervisor          # defines either a path to a directory containing a Dockerfile, or a url to a git repository
+  #     dockerfile: Dockerfile 
+  #   restart: always  
+  #   volumes: 
+  #     - ../backend/src:/public_html
+  #     - ./supervisor/cli/supervisor-init.sh:/usr/local/bin/supervisor-init.sh
+  #     - ./supervisor/logs/supervisor.log:/etc/supervisor/logs/supervisord.log
+  #   entrypoint: >
+  #     sh -c "chmod 777 /usr/local/bin/supervisor-init.sh
+  #     && exec /usr/bin/supervisord --nodaemon --configuration=/etc/supervisor/supervisord.conf
+  #     && /usr/local/bin/supervisor-init.sh"  
+
+
+
+
+
   #Composer 
   composer:
         image: composer

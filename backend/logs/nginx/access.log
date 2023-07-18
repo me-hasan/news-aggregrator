@@ -973,3 +973,6 @@
 192.168.40.1 - - [25/Jun/2023:15:56:02 +0000] "OPTIONS /api/preference/1 HTTP/1.1" 204 0 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" "-"
 192.168.40.1 - - [25/Jun/2023:15:56:02 +0000] "GET /api/preference/1 HTTP/1.1" 200 1288 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" "-"
 192.168.40.1 - - [25/Jun/2023:15:56:04 +0000] "GET /api/all-news HTTP/1.1" 200 54677 "http://localhost:3001/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" "-"
+192.168.40.1 - - [25/Jun/2023:16:46:57 +0000] "GET /api/all-news HTTP/1.1" 200 54677 "http://localhost:3001/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:108.0) Gecko/20100101 Firefox/108.0" "-"
+192.168.40.1 - - [25/Jun/2023:16:49:36 +0000] "GET /api/all-news HTTP/1.1" 200 54677 "http://localhost:3000/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:108.0) Gecko/20100101 Firefox/108.0" "-"
+192.168.40.1 - - [25/Jun/2023:16:49:39 +0000] "GET /api/all-news HTTP/1.1" 200 54685 "http://localhost:3000/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:108.0) Gecko/20100101 Firefox/108.0" "-"
